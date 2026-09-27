@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <script>
+      ;(function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        try {
+          localStorage.removeItem('theme')
+        } catch (e) {}
+        window.addEventListener('load', function () {
+          setTimeout(function () {
+            try {
+              document.body.style.overflow = ''
+              document.body.classList.remove('scroll-locked', 'menu-open')
+            } catch (e) {}
+          }, 1500)
+        })
+      })()
+    </script>
+    <title>Siddharth N R — AI / MLOps Engineer & Founder · Pluto AI Labs</title>
+    <meta name="description" content="Siddharth N R — AI/MLOps Engineer and Founder of Pluto AI Labs. 7,000+ Hugging Face downloads. #4 globally ranked sub-1B model. Contributor to Apple's MLX and 8+ open-source AI organizations." />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0a0a0b" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4f0e6" />
+    <meta property="og:title" content="Siddharth N R — AI / MLOps Engineer & Founder" />
+    <meta property="og:description" content="Founder of Pluto AI Labs. 7,000+ model downloads. #4 globally ranked sub-1B model. Athena-VL-250K. Contributor across 8+ AI organizations including Apple MLX." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%230A0A0B'/%3E%3Ccircle cx='32' cy='32' r='30' fill='none' stroke='%23D2B07A' stroke-width='1.5'/%3E%3Ctext x='32' y='42' font-family='Georgia, serif' font-style='italic' font-size='28' fill='%23EDE8DE' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
